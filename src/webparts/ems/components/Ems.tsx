@@ -2332,6 +2332,7 @@ export default class Ems extends React.Component<IEmsProps, IEmsState> {
                       <td className={contentInvoiceStyles.td}>{this.state.IExpenseModel[idx].StartMile} </td>
                       <td className={contentInvoiceStyles.td}>{this.state.IExpenseModel[idx].EndMileout} </td>
                       <td className={contentInvoiceStyles.td}>{this.state.IExpenseModel[idx].Description}</td>
+                      <td className={contentInvoiceStyles.td}>{this.state.IExpenseModel[idx].ExpenseDate}</td>
                       <td className={contentInvoiceStyles.td}>{this.state.IExpenseModel[idx].ExpenseCost}</td>
                     </tr>
                   </tbody>)               
@@ -2860,6 +2861,7 @@ financeSectionCss(){
                       <th className={contentInvoiceStyles.th}><strong>Start Mile</strong></th>
                       <th className={contentInvoiceStyles.th}><strong>End Mile</strong></th>
                       <th className={contentInvoiceStyles.th}><strong>Description</strong></th>
+                      <th className={contentInvoiceStyles.th}><strong>Date</strong></th>
                       <th className={contentInvoiceStyles.th}><strong>$ Amount</strong></th>
                     </tr>
                   </thead>
